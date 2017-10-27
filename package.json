@@ -1,0 +1,46 @@
+{
+  "name": "townMap",
+  "version": "0.1.0",
+  "description": "富阳乡镇场景地图",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "es6",
+    "webpack"
+  ],
+  "author": "jweboy",
+  "proxy": "http://saas.zeego.cn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZeegoTech/Fuyang-TownMap.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "classes": "^0.3.0",
+    "classnames": "^2.2.5",
+    "eslint": "^3.16.1",
+    "eslint-config-react-app": "^0.6.2",
+    "eslint-plugin-flowtype": "^2.21.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.4.1",
+    "normalize.css": "^5.0.0",
+    "pinchzoom": "^0.8.3",
+    "react-element-pan": "^1.0.9",
+    "react-frame-component": "^1.0.2",
+    "react-scripts": "0.9.5",
+    "react-tap-event-plugin": "^2.0.1",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "iscroll": "^5.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "clean:modules": "rimraf node_modules"
+  }
+}

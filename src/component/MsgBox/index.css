@@ -1,0 +1,180 @@
+.msg-box {
+    position: fixed;
+    bottom: -145px;
+    left: 0;
+    width: 100%;
+    /*height: 130px;*/
+    z-index: 100;
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    overflow-x: hidden
+}
+.tips{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    color: #f00;
+    font-size: 12px;
+    z-index:50
+}
+.poibox {
+    padding: 15px 5px;
+    overflow: hidden;
+}
+
+.msg-box .poibox .logo {
+    float: left;
+    margin-right: 10px;
+    /*margin-left: 10px;*/
+    width: 100px;
+    height: 90px;
+}
+
+.msg-box .poibox .poiname {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.msg-box .poibox .desc {
+    height: 67px;
+    /*text-indent: 2em;
+height: 30px;
+line-height: 15px;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+*/
+}
+
+.msg-box .icon-box {
+    padding: 10px;
+    position: relative;
+    height: 20px;
+}
+
+.msg-box .navigator-btn {
+    padding: 4px 10px;
+    float: right;
+    /*margin-top: 7px;*/
+    /*margin-right: 5px;*/
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #0091ff;
+}
+
+
+/*land-map*/
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.land-map {
+    width: 230%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../imgs/map.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.land-map .land {
+    display: block;
+    position: absolute;
+    width: 3%;
+    height: 3%;
+}
+.land-map .land[data-index="27"], .land-map .land[data-index="26"], .land-map .land[data-index="30"] {
+    width: 4%
+}
+.land-map .land .logo {
+    width: 100%;
+}
+
+.land-map .view {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 2.5%;
+}
+
+.land-map .view-spe {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 2.5%;
+}
+
+
+/*close icon*/
+
+.close.icon {
+    position: absolute;
+    right: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 22px;
+    height: 22px;
+    color: #000;
+}
+
+.close.icon:before {
+    position: absolute;
+    top: 10px;
+    width: 22px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content: "";
+}
+
+.close.icon:after {
+    position: absolute;
+    top: 10px;
+    width: 22px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+}
+
+
+/*animate class*/
+
+.card-move-in {
+    transform: translateY(-145px);
+    transition: all 350ms ease-out;
+}
+
+.card-move-out {
+    transform: translateY(145px);
+    transition: all 350ms ease-out;
+}
+
+.map-move {
+    transform: translateY(-145px);
+    transition: all 350ms ease-out;
+}
+
+.map-move-out {
+    transform: translateY(145px);
+    transition: all 350ms ease-out;
+}
+
+.hidden{
+    display: none;
+}
